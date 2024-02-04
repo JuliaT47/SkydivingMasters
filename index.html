@@ -8,13 +8,15 @@
     <title>Skydiving Masters</title>
   </head>
   <body>
-    <header>
-      <nav>
+    <header class="header">
+      <div class="container">
+         <div class="header-container">
+      <nav class="header-nav">
         <a href="./index.html">
           <img src="./SkyM_logo.jpg" alt="Logo Skydiving Masters" />
           <!-- Logo and manu-->
         </a>
-        <ul>
+        <ul class="header-manu">
           <li><a class="link" href="#our_school">Our school</a></li>
           <li><a class="link" href="#our_coaches">Our coaches</a></li>
           <li><a class="link" href="#disciplines">Disciplines</a></li>
@@ -23,36 +25,50 @@
       </nav>
       <button class="button" type="button">Order a call back</button>
       <!-- Order a call buttom -->
+     </div>
+    </div>
     </header>
     <main>
       <!-- main page -->
-      <section>
+      <section class="hero-section">
+        <div class="container">
         <h1 class="hero-title">
           <span class="accent">Skydiving</span> Masters
-        </h1>
+        </h1> </div> </section>
+        <section class=" advantages-section" id="our_school">
+          <div class="container">
+            <h2 class="visually-hidden">Our advanatges</h2>
         <ul class="advantages-list">
           <li class="advantages-item">High demand</li>
           <li class="advantages-item">For all experience levels</li>
           <li class="advantages-item">Experienced Team</li>
         </ul>
+      </div>  
       </section>
-      <section id="our_school">
-        <h2 class="section-title">Fun way to learn</h2>
+        <section class="description-section section">
+          <div class="container">
+            <div class="description-container">
+              <div class="description-content">
+        <h2 class="description-title section-title">Fun way to learn</h2>
         <p class="description">
           <span>Skydiving Masters</span> - a new and fun way to learn different
           disciplines in skydiving for qualified jumpers with different
           experience levels.
         </p>
-        <p>
+        <p class="description limited">
           Dive into the extraordinary! Our skydiving school beckons qualified
           thrill-seekers to elevate their skills. Experience advanced training,
           epic jumps, and unforgettable moments in the sky.
           <span>Join us on our epic adventures 🪂✨.</span>
         </p>
+        </div>
         <img src="./Homer_Wingsuit.jpeg" alt="Wingsuiter cartoon" />
+      </div>
+      </div>
       </section>
-      <section id="our_coaches">
-        <h2 class="section-title">
+      <section class="section" id="our_coaches">
+        <div class="container">
+        <h2 class="coaches-title section-title">
           Our best <span class="accent">coaches</span>
         </h2>
         <ul>
@@ -85,12 +101,14 @@
             </article>
           </li>
         </ul>
+        </div>
       </section>
-      <section id="disciplines">
-        <h2 class="section-title">Disciplines</h2>
-        <ul>
-          <li>
-            <article>
+      <section class="section" id="disciplines">
+        <div class="container">
+        <h2 class="disciplines-title section-title">Disciplines</h2>
+        <ul class="disciplines-list">
+          <li class="disciplines-item">
+            <article class="disciplines">
               <h3 class="format-title">Formation Skydiving</h3>
               <p class="disciplines-descrition">
                 <span class="accent">Formation Skydiving</span>, also known as
@@ -106,8 +124,8 @@
               </p>
             </article>
           </li>
-          <li>
-            <article>
+          <li class="disciplines-item">
+            <article class="disciplines">
               <h3 class="format-title">Free Flying</h3>
               <p class="disciplines-descrition">
                 <span class="accent">Free Flying</span> is an advanced skydiving
@@ -122,8 +140,8 @@
               </p>
             </article>
           </li>
-          <li>
-            <article>
+          <li class="disciplines-item">
+            <article class="disciplines">
               <h3 class="format-title">Wingsuiting</h3>
               <p class="disciplines-descrition">
                 <span class="accent">Wingsuiting</span>, often referred to as
@@ -137,12 +155,31 @@
                 creating a breathtaking and immersive experience for those who
                 dare to take the plunge into this cutting-edge discipline.
               </p>
+              </article>
+          </li>
+              <li class="disciplines-item">
+            <article class="disciplines">
+              <h3 class="format-title">Free Flying</h3>
+              <p class="disciplines-descrition">
+                <span class="accent">Tracking</span> text here
+              </p>
+            </article>
+          </li>
+          </li>
+              <li class="disciplines-item">
+            <article class="disciplines">
+              <h3 class="format-title">Free Flying</h3>
+              <p class="disciplines-descrition">
+                <span class="accent">Canopy Formation</span> text here
+              </p>
             </article>
           </li>
         </ul>
+        </div>
       </section>
-      <section id="contact_us">
-        <h2 class="section-title">Join our bodyflying school</h2>
+      <section class="section" id="contact_us">
+        <div class="container">
+        <h2 class=" contact-title section-title">Join our bodyflying school</h2>
         <p>Add your contact details to get a call back!</p>
         <button class="button" type="button">Order a call back</button>
         <li>
@@ -155,12 +192,14 @@
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
           </li>
+          </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
+      <div class="container">
       <nav>
         <a href="#">
-          <img src="./SkyM_logo.jpg" alt="Logo Skydiving Masters" />
+          <img src="./SkyM_logo.png" alt="Logo Skydiving Masters" />
           <!-- bottom of the page (contact info) -->
         </a>
         <ul>
@@ -192,6 +231,7 @@
         <a class= "address-link" href="#" target="_blank">Privacy Policy</a>
         <p class="address-copyright">&copy;2024</p>
       </address>
+    </div>
     </footer>
   </body>
 </html>

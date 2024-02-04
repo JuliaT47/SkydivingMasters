@@ -54,7 +54,11 @@
 }
 /*Needs to follow a particular order*/
 /* Base */
+* {
+  box-sizing: border-box;
+}
 body {
+  margin: 0;
   color: var(--color-primary-dark);
   font-family: Poppins, sans-serif;
   font-size: 18px;
@@ -62,12 +66,36 @@ body {
   line-height: 1.5; /* Number of pixels of line 
   hight devided by number of pixels of font size*/
 }
+
+h1, h2, h3, h4, h5, h6, p {margin-top: 0;}
+
 address {font-style: normal;}
 ul {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
 }
+.visually-hidden {
+  position: absolute;
+  left: 10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.section {
+  padding: 48px 0;
+}
+.container { /* To prevent page from adjusting to the screen size, to adapt to smaller screen sizes but not to stretch to bigger ones*/
+  width: 100%;
+  max-width: 1240px; /* (Did not work, had to use padding) was 1240 but made 1288 to add 24px to each side as padding*/
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
 /* Button */
 .button {
+  padding: 16px 32px;
   font-family: Poppins, sans-serif;
   font-size: 18px;
   font-weight: 600;
@@ -89,10 +117,36 @@ ul {
 }
 .link:hover {
   color: var(--color-brand);
-  font-weight: 600;
 }
-/* Hero-title */
+/* Header */
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 40px;
+}
+.header-manu {
+  display: flex;
+  gap: 64px;
+  flex-grow: 1;
+  justify-content: center;
+}
+/* Hero-section */
+.hero-section {
+  padding: 272px 0;
+  background-image: url(../skydive_nomad.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
 .hero-title {
+  margin-bottom: 0;
   color: var(--color-primary-light);
   text-align: center;
   font-size: 115px;
@@ -102,13 +156,36 @@ ul {
   color: var(--color-brand);
 }
 /* Advanatages*/
-.advantages-list {
-  color: var(--color-primary-light);
+.description-section {
+  padding-top: 96px;
+}
+.description-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+.description-content {
+  max-width: 710px;
+}
+.description-title {
+  margin-bottom: 42px;
+}
+.description.limited {
+max-width: 360px;
+}
+.advantages-section {
+  padding: 16px 0;
   background-color: var(--color-brand);
+}
+.advantages-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
 }
 .advantages-item {
   font-size: 20px;
   font-weight: 300;
+  color: var(--color-primary-light);
 }
 .section-title {
   font-size: 54px;
@@ -123,9 +200,33 @@ ul {
   text-transform: uppercase;
   font-weight: 600;
 }
+/* Coaches */
+.coaches-title {
+  margin-bottom: 80px;
+}
 .coaches {
+  margin-bottom: 16px;
   font-size: 40px;
   font-weight: 600;
+}
+/* Disciplines */
+.disciplines-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap; /* needed when creating a scroll with more items*/
+}
+.disciplines-item {
+  flex-basis: calc((100% - 40px) / 3);
+  /* when assigning class in html, can only be used for <li>*/
+  /* 40px gaps between the items*/
+}
+.disciplines {
+  border-radius: 16px;
+  padding: 24px;
+
+}
+.disciplines-title {
+  margin-bottom: 80px;
 }
 .disciplines-descrition{
   font-size: 14px;
@@ -140,7 +241,17 @@ font-weight: 600;
   font-size: 24px;
   font-weight: 600;
 }
+/* Contacts section */
+.contact-title {
+  margin-bottom: 16px;
+}
 /* Footer */
+.footer {
+  background-image: url(../clouds.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 .address-link {
   color: var(--color-primary-light);
   font-size: 16px;
