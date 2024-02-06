@@ -13,7 +13,7 @@
          <div class="header-container">
       <nav class="header-nav">
         <a href="./index.html">
-          <img src="./SkyM_logo.jpg" alt="Logo Skydiving Masters" />
+          <img src="./SM-logo.svg" alt="Logo Skydiving Masters" />
           <!-- Logo and manu-->
         </a>
         <ul class="header-manu">
@@ -62,18 +62,19 @@
           <span>Join us on our epic adventures 🪂✨.</span>
         </p>
         </div>
-        <img src="./Homer_Wingsuit.jpeg" alt="Wingsuiter cartoon" />
+        <img src="./Homer_Wingsuit.png" alt="Wingsuiter cartoon" />
       </div>
       </div>
       </section>
       <section class="section" id="our_coaches">
         <div class="container">
-        <h2 class="coaches-title section-title">
+        <h2 class="coaches-title section-title centered">
           Our best <span class="accent">coaches</span>
         </h2>
         <ul>
           <li>
             <article>
+              <img class= "coaches-images" src="./Jane.jpg" alt="Jane the coach">
               <h3 class="coaches">Jane</h3>
               <p>Hi, my name is Jane!</p>
               <p>
@@ -87,6 +88,7 @@
           </li>
           <li>
             <article>
+              <img class= "coaches-images" src="./Pete.jpg" alt="Pete the coach">
               <h3 class="coaches">Pete</h3>
               <p>Hi, my name is Pete!</p>
               <p>
@@ -105,7 +107,12 @@
       </section>
       <section class="section" id="disciplines">
         <div class="container">
-        <h2 class="disciplines-title section-title">Disciplines</h2>
+        <h2 class="disciplines-title section-title centered">Disciplines</h2>
+        <button class="slider" type="button">
+        <svg width="44" height="44">
+          <use href="./icons.svg#icon-circle-left"></use>
+        </svg>
+        </button>
         <ul class="disciplines-list">
           <li class="disciplines-item">
             <article class="disciplines">
@@ -175,6 +182,11 @@
             </article>
           </li>
         </ul>
+        <button class="slider" type="button">
+          <svg width="44" height="44">
+            <use href="./icons.svg#icon-circle-right"></use>
+          </svg>
+          </button>
         </div>
       </section>
       <section class="section" id="contact_us">
@@ -182,7 +194,7 @@
         <h2 class=" contact-title section-title">Join our bodyflying school</h2>
         <p>Add your contact details to get a call back!</p>
         <button class="button" type="button">Order a call back</button>
-        <li>
+        <div>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2220.428889026521!2d-3.2213066230910923!3d56.18426477324704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48863542ad7fc99d%3A0xb98918bc707d173!2sFife%20Airport!5e0!3m2!1sen!2suk!4v1706214161945!5m2!1sen!2suk"
               width="603"
@@ -191,7 +203,7 @@
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
-          </li>
+        </div>
           </div>
       </section>
     </main>
@@ -199,7 +211,7 @@
       <div class="container">
       <nav>
         <a href="#">
-          <img src="./SkyM_logo.png" alt="Logo Skydiving Masters" />
+          <img src="./SM-logo.svg" alt="Logo Skydiving Masters" />
           <!-- bottom of the page (contact info) -->
         </a>
         <ul>
@@ -219,12 +231,16 @@
           </li>
           <li>
             <a href="#">
-              <!-- Facebook icon-->
+             <svg class="address-icon" width="32" height="32">
+              <use href="./icons.svg#icon-Facebook"></use>
+             </svg>
             </a>
           </li>
           <li>
             <a href="#">
-              <!--Instagram icon-->
+              <svg class="address-icon" width="32" height="32">
+                <use href="./icons.svg#icon-instagram"></use>
+              </svg>
             </a>
           </li>
         </ul>
