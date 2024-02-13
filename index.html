@@ -71,35 +71,39 @@
         <h2 class="coaches-title section-title centered">
           Our best <span class="accent">coaches</span>
         </h2>
-        <ul>
-          <li>
-            <article>
+        <ul class="coaches-list">
+          <li class="coaches-item">
+            <article class="coaches-card">
               <img class= "coaches-images" src="./Jane.jpg" alt="Jane the coach">
+              <div>
               <h3 class="coaches">Jane</h3>
-              <p>Hi, my name is Jane!</p>
-              <p>
+              <p class="coaches-text">Hi, my name is Jane!</p>
+              <p class="coaches-text">
                 I have been skydiving since 2004, and have been holding a
                 coaching rating for a number of disiplies for the last 10 years.
                 I make learning fun, while keeping emphasis on safty for you and
                 those around you.
               </p>
-              <p>My faviourie skydiving specialty is wingsuiting!</p>
+              <p class="coaches-text">My faviourie skydiving specialty is wingsuiting!</p>
+              </div>
             </article>
           </li>
-          <li>
-            <article>
+          <li class="coaches-item">
+            <article class="coaches-card">
               <img class= "coaches-images" src="./Pete.jpg" alt="Pete the coach">
+              <div>
               <h3 class="coaches">Pete</h3>
-              <p>Hi, my name is Pete!</p>
-              <p>
+              <p class="coaches-text">Hi, my name is Pete!</p>
+              <p class="coaches-text">
                 I am a skydiving coach with 8 years of expertise, 2 years of
                 which I have spent as an AAF instructor. I am dedicated to
                 guiding thrill-seekers on their aerial journeys.
               </p>
-              <p>
+              <p class="coaches-text">
                 My passion soars in free flying, where I share my mastery for an
                 exhilarating and unforgettable experience.
               </p>
+            </div>
             </article>
           </li>
         </ul>
@@ -108,6 +112,7 @@
       <section class="section" id="disciplines">
         <div class="container">
         <h2 class="disciplines-title section-title centered">Disciplines</h2>
+        <div class="format-container">
         <button class="slider" type="button">
         <svg width="44" height="44">
           <use href="./icons.svg#icon-circle-left"></use>
@@ -173,7 +178,7 @@
             </article>
           </li>
           </li>
-              <li class="disciplines-item">
+            <li class="disciplines-item">
             <article class="disciplines">
               <h3 class="format-title">Free Flying</h3>
               <p class="disciplines-descrition">
@@ -188,22 +193,26 @@
           </svg>
           </button>
         </div>
+        </div>
       </section>
       <section class="section" id="contact_us">
         <div class="container">
+          <div class="contact-container">
+           <div class="contact-form">
         <h2 class=" contact-title section-title">Join our bodyflying school</h2>
         <p>Add your contact details to get a call back!</p>
         <button class="button" type="button">Order a call back</button>
-        <div>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2220.428889026521!2d-3.2213066230910923!3d56.18426477324704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48863542ad7fc99d%3A0xb98918bc707d173!2sFife%20Airport!5e0!3m2!1sen!2suk!4v1706214161945!5m2!1sen!2suk"
-              width="603"
-              height="595"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-        </div>
+      </div> 
+          <iframe
+            class="contact-map"  
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2220.428889026521!2d-3.2213066230910923!3d56.18426477324704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48863542ad7fc99d%3A0xb98918bc707d173!2sFife%20Airport!5e0!3m2!1sen!2suk!4v1706214161945!5m2!1sen!2suk"
+            width="603"
+            height="595"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          </div>
           </div>
       </section>
     </main>

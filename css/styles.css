@@ -219,6 +219,7 @@ ul {
   max-width: 520px;
 }
 .coaches-images {
+  width: 500px;
   border-radius: 4px 4px 4px 200px;
   box-shadow: -16px 16px 0 0 var(--color-primary-light),
     -16px 16px 0 2px var(--color-brand);
@@ -229,6 +230,13 @@ ul {
   width: 352px;
   border: 2px solid var(--color-brand);
   content: "";
+}
+.coaches-list {
+  display: flex;
+  gap: 30px;
+}
+.coaches-item {
+  flex-basis: calc((100% - 30px) / 2);
 }
 .coaches {
   margin-bottom: 16px;
@@ -285,7 +293,15 @@ ul {
   font-size: 24px;
   font-weight: 600;
 }
+.format-container {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
 /* Contacts section */
+.contact-container {
+  display: flex;
+}
 .contact-title {
   margin-bottom: 16px;
 }
