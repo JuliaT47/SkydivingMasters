@@ -174,23 +174,6 @@ a {
   color: var(--color-brand);
 }
 /* Advanatages*/
-.description-section {
-  padding-top: 96px;
-}
-.description-container {
-  display: flex;
-  justify-content: space-between;
-  gap: 40px;
-}
-.description-content {
-  max-width: 710px;
-}
-.description-title {
-  margin-bottom: 42px;
-}
-.description.limited {
-  max-width: 360px;
-}
 .advantages-section {
   padding: 16px 0;
   background-color: var(--color-brand);
@@ -220,6 +203,23 @@ a {
   color: var(--color-brand);
   text-transform: uppercase;
   font-weight: 600;
+}
+.description-section {
+  padding-top: 96px;
+}
+.description-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+.description-content {
+  max-width: 710px;
+}
+.description-title {
+  margin-bottom: 42px;
+}
+.description.limited {
+  max-width: 360px;
 }
 /* Coaches */
 .coaches-title {
