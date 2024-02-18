@@ -224,7 +224,22 @@ a {
 /* Coaches */
 .coaches-title {
   margin: 0 auto 80px;
-  max-width: 520px;
+  position: relative;
+}
+.coaches-title::before {
+  left: 0;
+}
+.coaches-title::after {
+  right: 0;
+}
+.coaches-title::before,
+.coaches-title::after {
+  display: block;
+  width: 352px;
+  border: 2px solid var(--color-brand);
+  content: "";
+  position: absolute;
+  bottom: 24px;
 }
 .coaches-text p {
   margin-bottom: 24px;
@@ -238,13 +253,7 @@ a {
   box-shadow: -16px 16px 0 0 var(--color-primary-light),
     -16px 16px 0 2px var(--color-brand);
 }
-.coaches-title::before,
-.coaches-title::after {
-  display: block;
-  width: 352px;
-  border: 2px solid var(--color-brand);
-  content: "";
-}
+
 .coaches-list {
   display: flex;
   gap: 40px 30px;
@@ -339,6 +348,19 @@ a {
   background-position: center;
   background-size: cover;
   padding: 32px 0;
+  position: relative;
+}
+.footer::after {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: url(../skydive_nomad\ Background\ Removed.png);
+  content: "";
+  right: 0%;
+  bottom: -180px;
+  transform: rotate(4deg);
 }
 .footer-container {
   display: flex;
@@ -350,14 +372,15 @@ a {
   flex-basis: 50%;
   gap: 20px;
 }
+.footer-logo,
+.footer-manu {
+  flex-grow: 1;
+}
+/* Address */
 .address-info,
 .address-list {
   flex-grow: 1; /* Not using padding or margin because it will make those 
   elements not flexible and when the size of the screen changes they do not adapt*/
-}
-.footer-logo,
-.footer-manu {
-  flex-grow: 1;
 }
 .address-link {
   color: var(--color-primary-light);
@@ -376,4 +399,33 @@ a {
 }
 .address-icon:hover {
   fill: var(--color-brand);
+}
+/*Modal window*/
+.backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal {
+  position: relative;
+  width: 800px;
+  height: 800px;
+  background-color: var(--color-primary-light);
+  border-radius: 32px;
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.modal-button-close {
+  position: absolute;
+  top: 40px;
+  right: 40px;
 }
