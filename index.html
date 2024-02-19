@@ -71,7 +71,9 @@
                 <span>Join us on our epic adventures 🪂✨.</span>
               </p>
             </div>
-            <img src="./Homer_Wingsuit.png" alt="Wingsuiter cartoon" />
+            <div class="spin">
+              <img src="./Homer_Wingsuit.png" alt="Wingsuiter cartoon" />
+            </div>
           </div>
         </div>
       </section>
@@ -226,11 +228,52 @@
         <div class="container">
           <div class="contact-container">
             <div class="contact-form">
-              <h2 class="contact-title section-title">
-                Join our bodyflying school
-              </h2>
-              <p>Add your contact details to get a call back!</p>
-              <button class="button" type="button">Order a call back</button>
+              <div class="modal contact">
+                <h2 class="section-title form">
+                  Join our <span class="accent">bodyflying school</span>
+                </h2>
+                <p class="form-text">
+                  Add your contact details to get a call back!
+                </p>
+                <form name="contact-form" autocomplete="off" novalidate>
+                  <div class="form-field">
+                    <label class="form-label" for="user-name">Name</label>
+                    <input
+                      class="form-input"
+                      type="text"
+                      id="user-name"
+                      name="user-name"
+                    />
+                  </div>
+                  <div class="form-field">
+                    <label class="form-label" for="user-tel"
+                      >Phone Number</label
+                    >
+                    <input
+                      class="form-input"
+                      type="tel"
+                      id="user-tel"
+                      name="user-tel"
+                    />
+                  </div>
+                  <div class="form-field">
+                    <label class="form-label" for="user-email">Email</label>
+                    <input
+                      class="form-input"
+                      type="email"
+                      id="user-email"
+                      name="user-email"
+                    />
+                  </div>
+                  <button class="button form-button" type="submit">
+                    Order a call back
+                  </button>
+                  <p class="form-policy">
+                    By pressing the button I agree to the
+                    <a class="form-policy-link" href="#">privacy policy</a>
+                  </p>
+                </form>
+              </div>
             </div>
             <iframe
               class="contact-map"
@@ -315,6 +358,46 @@
     <div class="backdrop">
       <div class="modal">
         <button class="modal-button-close" type="button">Close</button>
+        <h2 class="section-title form">Order a call back</h2>
+        <p class="form-text">
+          Fill the form and someone from our team will get in touch
+        </p>
+        <form name="modal-form" autocomplete="off" novalidate>
+          <div class="form-field">
+            <label class="form-label" for="user-name">Name</label>
+            <input
+              class="form-input"
+              type="text"
+              id="user-name"
+              name="user-name"
+            />
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="user-tel">Phone Number</label>
+            <input
+              class="form-input"
+              type="tel"
+              id="user-tel"
+              name="user-tel"
+            />
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="user-email">Email</label>
+            <input
+              class="form-input"
+              type="email"
+              id="user-email"
+              name="user-email"
+            />
+          </div>
+          <button class="button form-button" type="submit">
+            Order a call back
+          </button>
+          <p class="form-policy">
+            By pressing the button I agree to the
+            <a class="form-policy-link" href="#">privacy policy</a>
+          </p>
+        </form>
       </div>
     </div>
     <script src="./modal.js"></script>
