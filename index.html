@@ -362,7 +362,7 @@
         <p class="form-text">
           Fill the form and someone from our team will get in touch
         </p>
-        <form name="modal-form" autocomplete="off" novalidate>
+        <form name="modal-form" autocomplete="off">
           <div class="form-field">
             <label class="form-label" for="user-name">Name</label>
             <input
@@ -370,6 +370,7 @@
               type="text"
               id="user-name"
               name="user-name"
+              required
             />
           </div>
           <div class="form-field">
@@ -379,6 +380,7 @@
               type="tel"
               id="user-tel"
               name="user-tel"
+              required
             />
           </div>
           <div class="form-field">
@@ -388,8 +390,23 @@
               type="email"
               id="user-email"
               name="user-email"
+              required
             />
           </div>
+          <!-- <div class="checkbox">
+            <input
+              class="checkbox-input"
+              type="checkbox"
+              id="terms-conditions"
+              name="terms-conditions"
+            />
+            <label class="checkbox-label" for="terms-conditions">
+              <p class="#">
+                By ticking the box I agree to the
+                <a class="#" href="#">privacy policy</a>
+              </p>
+            </label>
+          </div> -->
           <button class="button form-button" type="submit">
             Order a call back
           </button>
