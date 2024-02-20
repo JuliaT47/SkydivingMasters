@@ -1,0 +1,19 @@
+/* Hero-section */
+.hero-section {
+  padding: 272px 0;
+  background-image: url(../skydive_nomad.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.hero-title {
+  margin-bottom: 0;
+  color: var(--color-primary-light);
+  text-align: center;
+  font-size: 115px;
+  font-weight: 600;
+}
+.hero-title .accent {
+  color: var(--color-brand);
+}

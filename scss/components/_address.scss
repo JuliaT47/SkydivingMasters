@@ -1,0 +1,25 @@
+/* Address */
+.address-info,
+.address-list {
+  flex-grow: 1; /* Not using padding or margin because it will make those 
+  elements not flexible and when the size of the screen changes they do not adapt*/
+}
+.address-link {
+  color: var(--color-primary-light);
+  font-size: 16px;
+  font-weight: 300;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.address-link:hover {
+  color: var(--color-brand);
+}
+.address-copyright {
+  font-size: 14px;
+}
+.address-icon {
+  fill: var(--color-primary-light);
+}
+.address-icon:hover {
+  fill: var(--color-brand);
+}

@@ -1,0 +1,47 @@
+*, /* The asterisk (*) is a CSS universal selector. It selects 
+all elements on the web page, applying the specified styles to each element.*/
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--color-primary-light);
+  margin: 0;
+  color: var(--color-primary-dark);
+  font-family: Poppins, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.5; /* Number of pixels of line 
+  hight devided by number of pixels of font size*/
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+address {
+  font-style: normal;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+a {
+  display: inline-block;
+}
+.section {
+  padding: 48px 0;
+}
+.container {
+  /* To prevent page from adjusting to the screen size, to adapt to smaller screen sizes but not to stretch to bigger ones*/
+  width: 100%;
+  max-width: 1240px; /* (Did not work, had to use padding) was 1240 but made 1288 to add 24px to each side as padding*/
+  margin: 0 auto;
+  padding: 0 24px;
+}

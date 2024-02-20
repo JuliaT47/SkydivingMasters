@@ -1,0 +1,47 @@
+/* Coaches */
+.coaches-title {
+  margin: 0 auto 80px;
+  position: relative;
+}
+.coaches-title::before {
+  left: 0;
+}
+.coaches-title::after {
+  right: 0;
+}
+.coaches-title::before,
+.coaches-title::after {
+  display: block;
+  width: 352px;
+  border: 2px solid var(--color-brand);
+  content: "";
+  position: absolute;
+  bottom: 24px;
+}
+.coaches-text p {
+  margin-bottom: 24px;
+}
+.coaches-text p:last-child {
+  margin-bottom: 0;
+}
+.coaches-images {
+  width: 500px;
+  border-radius: 4px 4px 4px 200px;
+  box-shadow: -16px 16px 0 0 var(--color-primary-light),
+    -16px 16px 0 2px var(--color-brand);
+}
+
+.coaches-list {
+  display: flex;
+  gap: 40px 30px;
+  flex-wrap: wrap; /*in case we decide to add more coaches, 
+  for now does not make a difference*/
+}
+.coaches-item {
+  flex-basis: calc((100% - 30px) / 2);
+}
+.coaches {
+  margin-bottom: 16px;
+  font-size: 40px;
+  font-weight: 600;
+}

@@ -1,0 +1,11 @@
+/* Link */
+.link {
+  color: var(--color-primary-light);
+  font-weight: 400;
+  text-decoration: none;
+  transition: color 0.3s; /*Always apply animation elements to to the 
+  actual element you want to change, not to the hover*/
+}
+.link:hover {
+  color: var(--color-brand);
+}

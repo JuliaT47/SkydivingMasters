@@ -1,0 +1,36 @@
+/* Footer */
+.footer {
+  background-color: #31261a;
+  background-image: url(../clouds.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 32px 0;
+  position: relative;
+}
+.footer::after {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: url(../skydive_nomad\ Background\ Removed.png);
+  content: "";
+  right: 0%;
+  bottom: -180px;
+  transform: rotate(4deg);
+}
+.footer-container {
+  display: flex;
+  gap: 20px;
+}
+.footer-nav,
+.footer-address {
+  display: flex;
+  flex-basis: 50%;
+  gap: 20px;
+}
+.footer-logo,
+.footer-manu {
+  flex-grow: 1;
+}
