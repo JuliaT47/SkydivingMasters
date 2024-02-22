@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Styles-->
-    <link rel="stylesheet" href="./scss/main.css" />
+    <link rel="stylesheet" href="./scss/main.min.css" />
     <title>Skydiving Masters</title>
   </head>
   <body>
     <header class="header">
       <div class="container">
-        <div class="header-container">
-          <nav class="header-nav">
+        <div class="header__container">
+          <nav class="header__nav">
             <a href="./index.html">
               <img
                 class="logo"
@@ -20,7 +20,7 @@
               />
               <!-- Logo and manu-->
             </a>
-            <ul class="header-manu">
+            <ul class="header__manu">
               <li><a class="link" href="#our_school">Our school</a></li>
               <li><a class="link" href="#our_coaches">Our coaches</a></li>
               <li><a class="link" href="#disciplines">Disciplines</a></li>
@@ -38,32 +38,38 @@
       <!-- main page -->
       <section class="hero-section">
         <div class="container">
-          <h1 class="hero-title">
-            <span class="accent">Skydiving</span> Masters
+          <h1 class="hero-section__title">
+            <span class="text-brand">Skydiving</span> Masters
           </h1>
         </div>
       </section>
       <section class="advantages-section" id="our_school">
         <div class="container">
           <h2 class="visually-hidden">Our advanatges</h2>
-          <ul class="advantages-list">
-            <li class="advantages-item">High demand</li>
-            <li class="advantages-item">For all experience levels</li>
-            <li class="advantages-item">Experienced Team</li>
+          <ul class="advantages-section__list">
+            <li class="advantages-section__item">High demand</li>
+            <li class="advantages-section__item">For all experience levels</li>
+            <li class="advantages-section__item">Experienced Team</li>
           </ul>
         </div>
       </section>
       <section class="description-section section">
         <div class="container">
-          <div class="description-container">
-            <div class="description-content">
-              <h2 class="description-title section-title">Fun way to learn</h2>
-              <p class="description">
+          <div class="description-section__container">
+            <div class="description-section__content">
+              <h2 class="description-section__title section-title">
+                Fun way to learn
+              </h2>
+              <p class="description-section__text">
                 <span>Skydiving Masters</span> - a new and fun way to learn
                 different disciplines in skydiving for qualified jumpers with
                 different experience levels.
               </p>
-              <p class="description limited">
+              <p
+                class="description-section__text description-section__text--limited"
+              >
+                <!----limited is a modifier, cannot be on its own, has to be used next to the element-->
+
                 Dive into the extraordinary! Our skydiving school beckons
                 qualified thrill-seekers to elevate their skills. Experience
                 advanced training, epic jumps, and unforgettable moments in the
@@ -77,88 +83,88 @@
           </div>
         </div>
       </section>
-      <section class="section" id="our_coaches">
+      <section class="coaches-section section" id="coaches-section">
         <div class="container">
-          <h2 class="coaches-title section-title centered">
+          <h2 class="section-title coaches-section__title text-centered">
             Our best
-            <span class="accent">
+            <span class="text-brand">
               <br />
               coaches</span
             >
           </h2>
-          <ul class="coaches-list">
-            <li class="coaches-item">
-              <article class="coaches-card">
+          <ul class="coaches-section__list">
+            <li class="coaches-section__item">
+              <article class="coaches-section__card">
                 <img
-                  class="coaches-images"
+                  class="coaches-card__images"
                   src="./Jane.jpg"
                   alt="Jane the coach"
                 />
                 <div>
-                  <h3 class="coaches">Jane</h3>
-                  <div class="coaches-text">
-                    <p>Hi, my name is Jane!</p>
-                    <p>
-                      I have been skydiving since 2004, and have been holding a
-                      coaching rating for a number of disiplies for the last 10
-                      years. I make learning fun, while keeping emphasis on
-                      safty for you and those around you.
-                    </p>
-                    <p>My faviourie skydiving specialty is wingsuiting!</p>
-                  </div>
+                  <h3 class="coaches-card__name">Jane</h3>
+                  <p class="coaches-card__text">Hi, my name is Jane!</p>
+                  <p class="coaches-card__text">
+                    I have been skydiving since 2004, and have been holding a
+                    coaching rating for a number of disiplies for the last 10
+                    years. I make learning fun, while keeping emphasis on safty
+                    for you and those around you.
+                  </p>
+                  <p class="coaches-card__text">
+                    My faviourie skydiving specialty is wingsuiting!
+                  </p>
                 </div>
               </article>
             </li>
-            <li class="coaches-item">
+            <li class="coaches-section__item">
               <article class="coaches-card">
                 <img
-                  class="coaches-images"
+                  class="coaches-card__images"
                   src="./Pete.jpg"
                   alt="Pete the coach"
                 />
                 <div>
-                  <h3 class="coaches">Pete</h3>
-                  <div class="coaches-text">
-                    <p>Hi, my name is Pete!</p>
-                    <p>
-                      I am a skydiving coach with 8 years of expertise, 2 years
-                      of which I have spent as an AAF instructor. I am dedicated
-                      to guiding thrill-seekers on their aerial journeys.
-                    </p>
-                    <p>
-                      My passion soars in free flying, where I share my mastery
-                      for an exhilarating and unforgettable experience.
-                    </p>
-                  </div>
+                  <h3 class="coaches-card__name">Pete</h3>
+                  <p class="coaches-card__text">Hi, my name is Pete!</p>
+                  <p class="coaches-card__text">
+                    I am a skydiving coach with 8 years of expertise, 2 years of
+                    which I have spent as an AAF instructor. I am dedicated to
+                    guiding thrill-seekers on their aerial journeys.
+                  </p>
+                  <p class="coaches-card__text">
+                    My passion soars in free flying, where I share my mastery
+                    for an exhilarating and unforgettable experience.
+                  </p>
                 </div>
               </article>
             </li>
           </ul>
         </div>
       </section>
-      <section class="section" id="disciplines">
+      <section class="disciplines-section section" id="disciplines-section">
         <div class="container">
-          <h2 class="disciplines-title section-title centered">Disciplines</h2>
-          <div class="format-container">
+          <h2 class="disciplines-section__title section-title text-centered">
+            Disciplines
+          </h2>
+          <div class="disciplines-section__container">
             <button class="slider" type="button">
               <svg width="44" height="44">
                 <use href="./icons.svg#icon-circle-left"></use>
               </svg>
             </button>
-            <ul class="disciplines-list">
-              <li class="disciplines-item">
-                <article class="disciplines">
+            <ul class="disciplines-section__list">
+              <li class="disciplines-section__item">
+                <article class="disciplines-card">
                   <img
-                    class="disciplines-image"
+                    class="disciplines-card__image"
                     src="./FS.jpeg"
                     alt="Formation Skydiving"
                   />
-                  <h3 class="format-title">Formation Skydiving</h3>
-                  <p class="disciplines-descrition">
-                    <span class="accent">Formation Skydiving</span>, also known
-                    as "belly flying," is a thrilling discipline where skydivers
-                    form and maintain geometric shapes or formations while in
-                    free fall. Jumping in a belly-to-earth position,
+                  <h3 class="disciplines-card__title">Formation Skydiving</h3>
+                  <p class="disciplines-card__text">
+                    <span class="text-brand">Formation Skydiving</span>, also
+                    known as "belly flying," is a thrilling discipline where
+                    skydivers form and maintain geometric shapes or formations
+                    while in free fall. Jumping in a belly-to-earth position,
                     participants work together to create intricate patterns in
                     the sky. The team's goal is to execute these formations with
                     precision and style before deploying their parachutes.
@@ -169,16 +175,16 @@
                   </p>
                 </article>
               </li>
-              <li class="disciplines-item">
-                <article class="disciplines">
-                  <!-- <img
-                    class="disciplines-image"
+              <li class="disciplines-section__item">
+                <article class="disciplines-card">
+                  <img
+                    class="disciplines-card__image"
                     src="./FF.jpeg"
                     alt="Free Flying"
-                  /> -->
-                  <h3 class="format-title">Free Flying</h3>
-                  <p class="disciplines-descrition">
-                    <span class="accent">Free Flying</span> is an advanced
+                  />
+                  <h3 class="disciplines-card__title">Free Flying</h3>
+                  <p class="disciplines-card__text">
+                    <span class="text-brand">Free Flying</span> is an advanced
                     skydiving discipline that breaks away from the traditional
                     belly-to-earth position, allowing for a more dynamic and
                     acrobatic experience. In Free Flying, skydivers adopt
@@ -191,52 +197,52 @@
                   </p>
                 </article>
               </li>
-              <li class="disciplines-item">
-                <article class="disciplines">
-                  <!-- <img
-                    class="disciplines-image"
+              <li class="disciplines-section__item">
+                <article class="disciplines-card">
+                  <img
+                    class="disciplines-card__image"
                     src="./wingsuiting.jpeg"
                     alt="Wingsuiting"
-                  /> -->
-                  <h3 class="format-title">Wingsuiting</h3>
-                  <p class="disciplines-descrition">
-                    <span class="accent">Wingsuiting</span>, often referred to
-                    as "flying squirrel" or "birdman" jumping, takes skydiving
-                    to new heights—literally. Participants wear specially
-                    designed wingsuits that increase surface area, allowing them
-                    to glide through the air like human birds. As skydivers exit
-                    the aircraft, they transform into wingsuit pilots, soaring
-                    across the sky at exhilarating speeds. Wingsuiting combines
-                    the adrenaline of free fall with the graceful flight of a
-                    wingsuit, creating a breathtaking and immersive experience
-                    for those who dare to take the plunge into this cutting-edge
-                    discipline.
+                  />
+                  <h3 class="disciplines-card__title">Wingsuiting</h3>
+                  <p class="disciplines-card__text">
+                    <span class="text-brand">Wingsuiting</span>, often referred
+                    to as "flying squirrel" or "birdman" jumping, takes
+                    skydiving to new heights—literally. Participants wear
+                    specially designed wingsuits that increase surface area,
+                    allowing them to glide through the air like human birds. As
+                    skydivers exit the aircraft, they transform into wingsuit
+                    pilots, soaring across the sky at exhilarating speeds.
+                    Wingsuiting combines the adrenaline of free fall with the
+                    graceful flight of a wingsuit, creating a breathtaking and
+                    immersive experience for those who dare to take the plunge
+                    into this cutting-edge discipline.
                   </p>
                 </article>
               </li>
-              <li class="disciplines-item">
-                <article class="disciplines">
-                  <!-- <img
-                    class="disciplines-image"
+              <li class="disciplines-section__item">
+                <article class="disciplines-card">
+                  <img
+                    class="disciplines-card__image"
                     src="./tracking.png"
                     alt="Tracking"
-                  /> -->
-                  <h3 class="format-title">Tracking</h3>
-                  <p class="disciplines-descrition">
-                    <span class="accent">Tracking</span> text here
+                  />
+                  <h3 class="disciplines-card__title">Tracking</h3>
+                  <p class="disciplines-card__text">
+                    <span class="text-brand">Tracking</span> text here
                   </p>
                 </article>
               </li>
-              <li class="disciplines-item">
-                <article class="disciplines">
-                  <!-- <img
-                    class="disciplines-image"
+              <li class="disciplines-section__item">
+                <article class="disciplines-card">
+                  <img
+                    class="disciplines-card__image"
                     src="./canopy-formation.jpeg"
                     alt="Canopy Formation"
-                  /> -->
-                  <h3 class="format-title">Canopy Formation</h3>
-                  <p class="disciplines-descrition">
-                    <span class="accent">Canopy Formation</span> text here
+                  />
+                  <h3 class="disciplines-card__title">Canopy Formation</h3>
+                  <p class="disciplines-card__text">
+                    <span class="text-brand">Canopy Formation</span> text here
                   </p>
                 </article>
               </li>
@@ -255,7 +261,7 @@
             <div class="contact-form">
               <div class="modal contact">
                 <h2 class="section-title form">
-                  Join our <span class="accent">bodyflying school</span>
+                  Join our <span class="text-brand">bodyflying school</span>
                 </h2>
                 <p class="form-text">
                   Add your contact details to get a call back!
@@ -355,20 +361,22 @@
                   >Fife Airport Goatmilk, Glenrothes KY6 2SL</a
                 >
               </li>
-              <li>
-                <a href="#">
-                  <svg class="address-icon" width="32" height="32">
-                    <use href="./icons.svg#icon-Facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <svg class="address-icon" width="32" height="32">
-                    <use href="./icons.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
+              <div class="address-icon">
+                <li>
+                  <a href="#">
+                    <svg class="address-icon" width="32" height="32">
+                      <use href="./icons.svg#icon-Facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg class="address-icon" width="32" height="32">
+                      <use href="./icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+              </div>
             </ul>
             <div class="address-info">
               <a class="address-link" href="#" target="_blank"

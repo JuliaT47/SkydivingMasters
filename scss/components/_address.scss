@@ -19,6 +19,8 @@
 }
 .address-icon {
   fill: var(--color-primary-light);
+  display: flex;
+  gap: 30px;
 }
 .address-icon:hover {
   fill: var(--color-brand);

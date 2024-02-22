@@ -5,24 +5,23 @@
   left: 0;
   width: 100%;
   padding-top: 32px;
-}
-.header-container {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-}
-.header-nav {
-  display: flex;
-  align-items: center;
-  flex-grow: 1;
-  gap: 40px;
-}
-.header-manu {
-  display: flex;
-  gap: 64px;
-  flex-grow: 1;
-  justify-content: center;
-}
-.logo {
-  width: 120px;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    gap: 40px;
+  }
+  &__manu {
+    display: flex;
+    gap: 64px;
+    flex-grow: 1;
+    justify-content: center;
+  }
 }

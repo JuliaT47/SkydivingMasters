@@ -35,13 +35,13 @@ ul {
 a {
   display: inline-block;
 }
-.section {
-  padding: 48px 0;
-}
 .container {
   /* To prevent page from adjusting to the screen size, to adapt to smaller screen sizes but not to stretch to bigger ones*/
   width: 100%;
   max-width: 1240px; /* (Did not work, had to use padding) was 1240 but made 1288 to add 24px to each side as padding*/
   margin: 0 auto;
   padding: 0 24px;
+}
+.logo {
+  width: 120px;
 }

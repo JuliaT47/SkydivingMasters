@@ -1,5 +1,7 @@
 @import "./utils/fonts";
 
+@import "./utils/texts";
+
 @import "./utils/variables";
 
 @import "./base";
@@ -14,6 +16,8 @@
 
 @import "./components/header";
 
+@import "./components/sections";
+
 @import "./components/hero-section";
 
 @import "./components/advantages";
@@ -22,7 +26,11 @@
 
 @import "./components/coaches";
 
+@import "./components/_coaches-card";
+
 @import "./components/disciplines";
+
+@import "./components/_disciplines-card";
 
 @import "./components/formats";
 
