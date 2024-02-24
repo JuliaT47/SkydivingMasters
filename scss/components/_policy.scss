@@ -1,0 +1,11 @@
+.form-policy {
+  max-width: 190px;
+  margin: 0 auto;
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+  &__link {
+    color: var(--color-primary-dark);
+    text-underline-offset: 2px;
+  }
+}

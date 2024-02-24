@@ -257,57 +257,57 @@
       </section>
       <section class="contact-section section" id="contact_us">
         <div class="container">
-          <div class="contact-container">
-            <div class="contact-form">
-              <div class="modal contact">
-                <h2 class="section-title form">
+          <div class="contact-section__container">
+            <div>
+              <div class="contact-section__form">
+                <h2 class="section-title contact-section__title">
                   Join our <span class="text-brand">bodyflying school</span>
                 </h2>
-                <p class="form-text">
+                <p class="contact-section__text">
                   Add your contact details to get a call back!
                 </p>
                 <form name="contact-form" autocomplete="off" novalidate>
-                  <div class="form-field">
-                    <label class="form-label" for="user-name">Name</label>
+                  <div class="contact-section__form-field input">
+                    <label class="input__label" for="user-name">Name</label>
                     <input
-                      class="form-input"
+                      class="input__control"
                       type="text"
                       id="user-name"
                       name="user-name"
                     />
                   </div>
-                  <div class="form-field">
-                    <label class="form-label" for="user-tel"
+                  <div class="contact-section__form-field input">
+                    <label class="input__label" for="user-tel"
                       >Phone Number</label
                     >
                     <input
-                      class="form-input"
+                      class="input__control"
                       type="tel"
                       id="user-tel"
                       name="user-tel"
                     />
                   </div>
-                  <div class="form-field">
-                    <label class="form-label" for="user-email">Email</label>
+                  <div class="contact-section__form-field input">
+                    <label class="input__label" for="user-email">Email</label>
                     <input
-                      class="form-input"
+                      class="input__control"
                       type="email"
                       id="user-email"
                       name="user-email"
                     />
                   </div>
-                  <button class="button form-button" type="submit">
+                  <button class="button contact-section__button" type="submit">
                     Order a call back
                   </button>
                   <p class="form-policy">
                     By pressing the button I agree to the
-                    <a class="form-policy-link" href="#">privacy policy</a>
+                    <a class="form-policy__link" href="#">privacy policy</a>
                   </p>
                 </form>
               </div>
             </div>
             <iframe
-              class="contact-map"
+              class="contact-section__map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2220.428889026521!2d-3.2213066230910923!3d56.18426477324704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48863542ad7fc99d%3A0xb98918bc707d173!2sFife%20Airport!5e0!3m2!1sen!2suk!4v1706214161945!5m2!1sen!2suk"
               width="603"
               height="595"
@@ -321,9 +321,9 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <div class="footer-container">
-          <nav class="footer-nav">
-            <div class="footer-logo">
+        <div class="footer__container">
+          <nav class="footer__nav">
+            <div class="footer__logo">
               <!--Previously had this class in the <a> but it would make the link too large 
               inside the footer, putting class here limits the link to the size of the logo image-->
               <a href="#">
@@ -335,54 +335,54 @@
                 <!-- bottom of the page (contact info) -->
               </a>
             </div>
-            <ul class="footer-manu">
+            <ul class="footer__manu">
               <li><a class="link" href="#">Our school</a></li>
               <li><a class="link" href="#">Our coaches</a></li>
               <li><a class="link" href="#">Disciplines</a></li>
               <li><a class="link" href="#">Contact us</a></li>
             </ul>
           </nav>
-          <address class="footer-address">
-            <ul class="address-list">
+          <address class="footer__address address">
+            <ul class="address__list">
               <li>
-                <a class="address-link" href="tel:+441686571223"
+                <a class="address__link" href="tel:+441686571223"
                   >+44(0)168 657 1223</a
                 >
               </li>
               <li>
-                <a class="address-link" href="mailto:SkydiveMasters@gmail.com"
+                <a class="address__link" href="mailto:SkydiveMasters@gmail.com"
                   >SkydiveMasters@gmail.com</a
                 >
               </li>
               <li>
                 <a
-                  class="address-link"
+                  class="address__link"
                   href="https://maps.app.goo.gl/7QymQzRW8b8BgMmh7"
                   >Fife Airport Goatmilk, Glenrothes KY6 2SL</a
                 >
               </li>
-              <div class="address-icon">
+              <div class="address__icon">
                 <li>
                   <a href="#">
-                    <svg class="address-icon" width="32" height="32">
+                    <svg class="address__icon" width="32" height="32">
                       <use href="./icons.svg#icon-Facebook"></use>
                     </svg>
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <svg class="address-icon" width="32" height="32">
+                    <svg class="address__icon" width="32" height="32">
                       <use href="./icons.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </li>
               </div>
             </ul>
-            <div class="address-info">
-              <a class="address-link" href="#" target="_blank"
+            <div class="address__info">
+              <a class="address__link" href="#" target="_blank"
                 >Privacy Policy</a
               >
-              <p class="address-copyright">&copy; 2024</p>
+              <p class="address__copyright">&copy; 2024</p>
             </div>
           </address>
         </div>
@@ -390,36 +390,38 @@
     </footer>
     <div class="backdrop is-hidden">
       <div class="modal">
-        <button class="modal-button-close" type="button">X</button>
-        <h2 class="section-title form">Order a call back</h2>
-        <p class="form-text">
+        <button class="modal__button-close modal-button-close" type="button">
+          X
+        </button>
+        <h2 class="section-title modal__title">Order a call back</h2>
+        <p class="modal__text">
           Fill the form and someone from our team will get in touch
         </p>
         <form a name="modal-form" autocomplete="off">
-          <div class="form-field">
-            <label class="form-label" for="user-name">Name</label>
+          <div class="modal__form-field input">
+            <label class="input__label" for="user-name">Name</label>
             <input
-              class="form-input"
+              class="input__control"
               type="text"
               id="user-name"
               name="user-name"
               required
             />
           </div>
-          <div class="form-field">
-            <label class="form-label" for="user-tel">Phone Number</label>
+          <div class="modal__form-field input">
+            <label class="input__label" for="user-tel">Phone Number</label>
             <input
-              class="form-input"
+              class="input__control"
               type="tel"
               id="user-tel"
               name="user-tel"
               required
             />
           </div>
-          <div class="form-field">
-            <label class="form-label" for="user-email">Email</label>
+          <div class="modal__form-field input">
+            <label class="input__label" for="user-email">Email</label>
             <input
-              class="form-input"
+              class="input__control"
               type="email"
               id="user-email"
               name="user-email"
@@ -440,12 +442,12 @@
               </p>
             </label>
           </div> -->
-          <button class="button form-button" type="submit">
+          <button class="button modal__button" type="submit">
             Order a call back
           </button>
           <p class="form-policy">
             By pressing the button I agree to the
-            <a class="form-policy-link" href="#">privacy policy</a>
+            <a class="form-policy__link" href="#">privacy policy</a>
           </p>
         </form>
       </div>
