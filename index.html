@@ -18,19 +18,31 @@
                 src="./SM-logo.svg"
                 alt="Logo Skydiving Masters"
               />
-              <!-- Logo and manu-->
+              <!-- Logo and menu-->
             </a>
-            <ul class="header__manu">
+            <ul class="header__menu">
               <li><a class="link" href="#our_school">Our school</a></li>
               <li><a class="link" href="#our_coaches">Our coaches</a></li>
               <li><a class="link" href="#disciplines">Disciplines</a></li>
               <li><a class="link" href="#contact_us">Contact us</a></li>
             </ul>
           </nav>
-          <button class="button modal-button-open" type="button">
+          <button class="header__button button modal-button-open" type="button">
             Order a call back
           </button>
-          <!-- Order a call buttom -->
+          <button class="header__burger menu-button-open" type="button">
+            <svg width="24" height="24">
+              <use href="./icomoon/symbol-defs.svg#icon-Vector"></use>
+            </svg>
+          </button>
+          <div class="mobile-menu">
+            <button
+              class="mobile-menu__button-close menu-button-close"
+              type="button"
+            >
+              X
+            </button>
+          </div>
         </div>
       </div>
     </header>
@@ -41,6 +53,12 @@
           <h1 class="hero-section__title">
             <span class="text-brand">Skydiving</span> Masters
           </h1>
+          <button
+            class="hero-section__button button modal-button-open"
+            type="button"
+          >
+            Order a call back
+          </button>
         </div>
       </section>
       <section class="advantages-section" id="our_school">
@@ -335,7 +353,7 @@
                 <!-- bottom of the page (contact info) -->
               </a>
             </div>
-            <ul class="footer__manu">
+            <ul class="footer__menu">
               <li><a class="link" href="#">Our school</a></li>
               <li><a class="link" href="#">Our coaches</a></li>
               <li><a class="link" href="#">Disciplines</a></li>
@@ -453,5 +471,6 @@
       </div>
     </div>
     <script src="./modal.js"></script>
+    <script src="./mobile-menu.js"></script>
   </body>
 </html>

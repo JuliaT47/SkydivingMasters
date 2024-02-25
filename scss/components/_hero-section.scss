@@ -1,17 +1,37 @@
 /* Hero-section */
 .hero-section {
-  padding: 272px 0;
+  padding: 124px 0;
   background-image: url(../skydive_nomad.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
 
+  @media screen and (min-width: $bp-desktop) {
+    padding: 272px 0;
+  }
+
   &__title {
-    margin-bottom: 0;
+    margin-bottom: 48px;
     color: var(--color-primary-light);
     text-align: center;
-    font-size: 115px;
+    font-size: 67px;
+    line-height: 1;
     font-weight: 600;
+
+    @media screen and (min-width: $bp-desktop) {
+      font-size: 115px;
+      line-height: 1.5;
+      margin-bottom: 0;
+    }
+  }
+
+  &__button {
+    display: block;
+    margin: 0 auto;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: none;
+    }
   }
 }
