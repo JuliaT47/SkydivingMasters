@@ -1,10 +1,18 @@
 .description-section {
-  padding-top: 96px;
+  padding-top: 40px;
+
+  @media screen and (min-width: $bp-desktop) {
+    padding-top: 96px;
+  }
 
   &__container {
-    display: flex;
-    justify-content: space-between;
+    display: block;
     gap: 40px;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
+      justify-content: space-between;
+    }
   }
   &__content {
     max-width: 710px;
@@ -19,7 +27,10 @@
   }
   &__text {
     &--limited {
-      max-width: 360px;
+      max-width: none;
+      @media screen and (min-width: $bp-desktop) {
+        max-width: 360px;
+      }
     }
   }
 }

@@ -5,10 +5,10 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
 
   @media screen and (min-width: $bp-desktop) {
     padding: 272px 0;
+    background-attachment: fixed;
   }
 
   &__title {
