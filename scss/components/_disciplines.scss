@@ -2,19 +2,14 @@
   &__title {
     margin-bottom: 80px;
   }
-  &__container {
+  &__slider {
     display: flex;
     gap: 32px;
     align-items: center;
   }
-  &__list {
+  &__container {
+    overflow: hidden;
+    width: 100%;
     display: flex;
-    gap: 20px;
-    flex-wrap: wrap; /* needed when creating a scroll with more items*/
-  }
-  &__item {
-    flex-basis: calc((100% - 40px) / 2);
-    /* when assigning class in html, can only be used for <li>*/
-    /* 40px gaps between the items*/
   }
 }

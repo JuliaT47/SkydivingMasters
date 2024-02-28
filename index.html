@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Styles-->
     <link rel="stylesheet" href="./scss/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <title>Skydiving Masters</title>
   </head>
   <body>
@@ -112,7 +116,7 @@
           </h2>
           <ul class="coaches-section__list">
             <li class="coaches-section__item">
-              <article class="coaches-section__card">
+              <article class="coaches-card">
                 <img
                   class="coaches-card__images"
                   src="./Jane.jpg"
@@ -163,109 +167,117 @@
           <h2 class="disciplines-section__title section-title text-centered">
             Disciplines
           </h2>
-          <div class="disciplines-section__container">
-            <button class="slider" type="button">
+          <div class="disciplines-section__slider">
+            <button class="slider prev" type="button">
               <svg width="44" height="44">
                 <use href="./icons.svg#icon-circle-left"></use>
               </svg>
             </button>
-            <ul class="disciplines-section__list">
-              <li class="disciplines-section__item">
-                <article class="disciplines-card">
-                  <img
-                    class="disciplines-card__image"
-                    src="./FS.jpeg"
-                    alt="Formation Skydiving"
-                  />
-                  <h3 class="disciplines-card__title">Formation Skydiving</h3>
-                  <p class="disciplines-card__text">
-                    <span class="text-brand">Formation Skydiving</span>, also
-                    known as "belly flying," is a thrilling discipline where
-                    skydivers form and maintain geometric shapes or formations
-                    while in free fall. Jumping in a belly-to-earth position,
-                    participants work together to create intricate patterns in
-                    the sky. The team's goal is to execute these formations with
-                    precision and style before deploying their parachutes.
-                    Formation Skydiving demands teamwork, communication, and
-                    precise body control, making it a dynamic and exhilarating
-                    experience for those who seek the excitement of coordinated
-                    group jumps.
-                  </p>
-                </article>
-              </li>
-              <li class="disciplines-section__item">
-                <article class="disciplines-card">
-                  <img
-                    class="disciplines-card__image"
-                    src="./FF.jpeg"
-                    alt="Free Flying"
-                  />
-                  <h3 class="disciplines-card__title">Free Flying</h3>
-                  <p class="disciplines-card__text">
-                    <span class="text-brand">Free Flying</span> is an advanced
-                    skydiving discipline that breaks away from the traditional
-                    belly-to-earth position, allowing for a more dynamic and
-                    acrobatic experience. In Free Flying, skydivers adopt
-                    various body positions, such as head-down or head-up
-                    orientations, to perform intricate maneuvers in free fall.
-                    This discipline emphasizes individual skill, creativity, and
-                    the freedom to express oneself through aerial acrobatics.
-                    Free Flying appeals to thrill-seekers who crave a unique and
-                    visually stunning skydiving experience.
-                  </p>
-                </article>
-              </li>
-              <li class="disciplines-section__item">
-                <article class="disciplines-card">
-                  <img
-                    class="disciplines-card__image"
-                    src="./wingsuiting.jpeg"
-                    alt="Wingsuiting"
-                  />
-                  <h3 class="disciplines-card__title">Wingsuiting</h3>
-                  <p class="disciplines-card__text">
-                    <span class="text-brand">Wingsuiting</span>, often referred
-                    to as "flying squirrel" or "birdman" jumping, takes
-                    skydiving to new heights—literally. Participants wear
-                    specially designed wingsuits that increase surface area,
-                    allowing them to glide through the air like human birds. As
-                    skydivers exit the aircraft, they transform into wingsuit
-                    pilots, soaring across the sky at exhilarating speeds.
-                    Wingsuiting combines the adrenaline of free fall with the
-                    graceful flight of a wingsuit, creating a breathtaking and
-                    immersive experience for those who dare to take the plunge
-                    into this cutting-edge discipline.
-                  </p>
-                </article>
-              </li>
-              <li class="disciplines-section__item">
-                <article class="disciplines-card">
-                  <img
-                    class="disciplines-card__image"
-                    src="./tracking.png"
-                    alt="Tracking"
-                  />
-                  <h3 class="disciplines-card__title">Tracking</h3>
-                  <p class="disciplines-card__text">
-                    <span class="text-brand">Tracking</span> text here
-                  </p>
-                </article>
-              </li>
-              <li class="disciplines-section__item">
-                <article class="disciplines-card">
-                  <img
-                    class="disciplines-card__image"
-                    src="./canopy-formation.jpeg"
-                    alt="Canopy Formation"
-                  />
-                  <h3 class="disciplines-card__title">Canopy Formation</h3>
-                  <p class="disciplines-card__text">
-                    <span class="text-brand">Canopy Formation</span> text here
-                  </p>
-                </article>
-              </li>
-            </ul>
-            <button class="slider" type="button">
+            <div class="disciplines-section__container swiper-container">
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                  <article class="disciplines-card">
+                    <img
+                      class="disciplines-card__image"
+                      src="./FS.jpeg"
+                      alt="Formation Skydiving"
+                    />
+                    <h3 class="disciplines-card__title">Formation Skydiving</h3>
+                    <p class="disciplines-card__text">
+                      <span class="text-brand">Formation Skydiving</span>, also
+                      known as "belly flying," is a thrilling discipline where
+                      skydivers form and maintain geometric shapes or formations
+                      while in free fall. Jumping in a belly-to-earth position,
+                      participants work together to create intricate patterns in
+                      the sky. The team's goal is to execute these formations
+                      with precision and style before deploying their
+                      parachutes. Formation Skydiving demands teamwork,
+                      communication, and precise body control, making it a
+                      dynamic and exhilarating experience for those who seek the
+                      excitement of coordinated group jumps.
+                    </p>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="disciplines-card">
+                    <img
+                      class="disciplines-card__image"
+                      src="./FF.jpeg"
+                      alt="Free Flying"
+                    />
+                    <h3 class="disciplines-card__title">Free Flying</h3>
+                    <p class="disciplines-card__text">
+                      <span class="text-brand">Free Flying</span> is an advanced
+                      skydiving discipline that breaks away from the traditional
+                      belly-to-earth position, allowing for a more dynamic and
+                      acrobatic experience. In Free Flying, skydivers adopt
+                      various body positions, such as head-down or head-up
+                      orientations, to perform intricate maneuvers in free fall.
+                      This discipline emphasizes individual skill, creativity,
+                      and the freedom to express oneself through aerial
+                      acrobatics. Free Flying appeals to thrill-seekers who
+                      crave a unique and visually stunning skydiving experience.
+                    </p>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="disciplines-card">
+                    <img
+                      class="disciplines-card__image"
+                      src="./wingsuiting.jpeg"
+                      alt="Wingsuiting"
+                    />
+                    <h3 class="disciplines-card__title">Wingsuiting</h3>
+                    <p class="disciplines-card__text">
+                      <span class="text-brand">Wingsuiting</span>, often
+                      referred to as "flying squirrel" or "birdman" jumping,
+                      takes skydiving to new heights—literally. Participants
+                      wear specially designed wingsuits that increase surface
+                      area, allowing them to glide through the air like human
+                      birds. As skydivers exit the aircraft, they transform into
+                      wingsuit pilots, soaring across the sky at exhilarating
+                      speeds. Wingsuiting combines the adrenaline of free fall
+                      with the graceful flight of a wingsuit, creating a
+                      breathtaking and immersive experience for those who dare
+                      to take the plunge into this cutting-edge discipline.
+                    </p>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="disciplines-card">
+                    <img
+                      class="disciplines-card__image"
+                      src="./tracking.png"
+                      alt="Tracking"
+                    />
+                    <h3 class="disciplines-card__title">Tracking</h3>
+                    <p class="disciplines-card__text">
+                      <span class="text-brand">Tracking</span> text here
+                    </p>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="disciplines-card">
+                    <img
+                      class="disciplines-card__image"
+                      src="./canopy-formation.jpeg"
+                      alt="Canopy Formation"
+                    />
+                    <h3 class="disciplines-card__title">Canopy Formation</h3>
+                    <p class="disciplines-card__text">
+                      <span class="text-brand">Canopy Formation</span> text here
+                    </p>
+                  </article>
+                </li>
+              </ul>
+              <div class="pagination">
+                <span class="pagination__button"></span>
+                <span class="pagination__button"></span>
+                <span class="pagination__button"></span>
+                <span class="pagination__button"></span>
+              </div>
+            </div>
+            <button class="slider next" type="button">
               <svg width="44" height="44">
                 <use href="./icons.svg#icon-circle-right"></use>
               </svg>
@@ -380,20 +392,16 @@
                 >
               </li>
               <div class="address__icon">
-                <li>
-                  <a href="#">
-                    <svg class="address__icon" width="32" height="32">
-                      <use href="./icons.svg#icon-Facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <svg class="address__icon" width="32" height="32">
-                      <use href="./icons.svg#icon-instagram"></use>
-                    </svg>
-                  </a>
-                </li>
+                <a href="#">
+                  <svg class="address__icon" width="32" height="32">
+                    <use href="./icons.svg#icon-Facebook"></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg class="address__icon" width="32" height="32">
+                    <use href="./icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </div>
             </ul>
             <div class="address__info">
@@ -470,6 +478,8 @@
         </form>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./slider.js"></script>
     <script src="./modal.js"></script>
     <script src="./mobile-menu.js"></script>
   </body>

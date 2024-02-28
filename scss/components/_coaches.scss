@@ -1,8 +1,12 @@
 /* Coaches */
 .coaches-section {
   &__title {
-    margin: 0 auto 80px;
+    margin: 0 auto 42px;
     position: relative;
+
+    @media screen and (min-width: $bp-desktop) {
+      margin: 0 auto 80px;
+    }
   }
   &__list {
     display: flex;
@@ -18,14 +22,20 @@
   }
   &__title::before,
   &__title::after {
-    display: block;
-    width: 352px;
-    border: 2px solid var(--color-brand);
-    content: "";
-    position: absolute;
-    bottom: 24px;
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+      width: 352px;
+      border: 2px solid var(--color-brand);
+      content: "";
+      position: absolute;
+      bottom: 24px;
+    }
   }
   &__item {
-    flex-basis: calc((100% - 30px) / 2);
+    @media screen and (min-width: $bp-desktop) {
+      flex-basis: calc((100% - 30px) / 2);
+    }
   }
 }
