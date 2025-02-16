@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -40,6 +40,29 @@
             </svg>
           </button>
           <div class="mobile-menu">
+            <a href="./index.html">
+              <img src="./SM-logo.svg" alt="Skydiving Masters Logo" />
+            </a>
+            <div class="mobile-menu__links">
+              <ul class="mobile-menu__menu">
+                <li><a class="link" href="#our_school">Our school</a></li>
+                <li><a class="link" href="#our_coaches">Our coaches</a></li>
+                <li><a class="link" href="#disciplines">Disciplines</a></li>
+                <li><a class="link" href="#contact_us">Contact us</a></li>
+              </ul>
+              <div class="mobile-menu__socials">
+                <a href="#">
+                  <svg class="address__icon" width="35" height="35">
+                    <use href="./icons.svg#icon-Facebook"></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg class="address__icon" width="35" height="35">
+                    <use href="./icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
             <button
               class="mobile-menu__button-close menu-button-close"
               type="button"
@@ -105,7 +128,7 @@
           </div>
         </div>
       </section>
-      <section class="coaches-section section" id="coaches-section">
+      <section class="coaches-section section" id="our_coaches">
         <div class="container">
           <h2 class="section-title coaches-section__title text-centered">
             Our best
@@ -162,7 +185,7 @@
           </ul>
         </div>
       </section>
-      <section class="disciplines-section section" id="disciplines-section">
+      <section class="disciplines-section section" id="disciplines">
         <div class="container">
           <h2 class="disciplines-section__title section-title text-centered">
             Disciplines
@@ -243,19 +266,7 @@
                     </p>
                   </article>
                 </li>
-                <li class="swiper-slide">
-                  <article class="disciplines-card">
-                    <img
-                      class="disciplines-card__image"
-                      src="./tracking.png"
-                      alt="Tracking"
-                    />
-                    <h3 class="disciplines-card__title">Tracking</h3>
-                    <p class="disciplines-card__text">
-                      <span class="text-brand">Tracking</span> text here
-                    </p>
-                  </article>
-                </li>
+
                 <li class="swiper-slide">
                   <article class="disciplines-card">
                     <img
@@ -265,7 +276,18 @@
                     />
                     <h3 class="disciplines-card__title">Canopy Formation</h3>
                     <p class="disciplines-card__text">
-                      <span class="text-brand">Canopy Formation</span> text here
+                      <span class="text-brand">Canopy Formation</span> Canopy
+                      Formations, is a discipline in skydiving where
+                      parachutists use their open canopies to create formations
+                      in the sky. This involves skilled pilots flying their
+                      parachutes in close proximity, docking onto each other by
+                      gripping lines or fabric, and building intricate
+                      formations like stacks, diamonds, or pods. Unlike other
+                      skydiving disciplines that focus on freefall, CF
+                      emphasizes canopy control, teamwork, and precise
+                      maneuvering. It requires specialized canopies with low
+                      wing loading to facilitate smooth approaches and minimize
+                      the risk of collisions.
                     </p>
                   </article>
                 </li>
@@ -298,32 +320,30 @@
                 </p>
                 <form name="contact-form" autocomplete="off" novalidate>
                   <div class="contact-section__form-field input">
-                    <label class="input__label" for="user-name">Name</label>
                     <input
                       class="input__control"
                       type="text"
                       id="user-name"
                       name="user-name"
+                      placeholder="Name"
                     />
                   </div>
                   <div class="contact-section__form-field input">
-                    <label class="input__label" for="user-tel"
-                      >Phone Number</label
-                    >
                     <input
                       class="input__control"
                       type="tel"
                       id="user-tel"
                       name="user-tel"
+                      placeholder="Phone Number"
                     />
                   </div>
                   <div class="contact-section__form-field input">
-                    <label class="input__label" for="user-email">Email</label>
                     <input
                       class="input__control"
                       type="email"
                       id="user-email"
                       name="user-email"
+                      placeholder="Email"
                     />
                   </div>
                   <button class="button contact-section__button" type="submit">
@@ -364,10 +384,10 @@
               </a>
             </div>
             <ul class="footer__menu">
-              <li><a class="link" href="#">Our school</a></li>
-              <li><a class="link" href="#">Our coaches</a></li>
-              <li><a class="link" href="#">Disciplines</a></li>
-              <li><a class="link" href="#">Contact us</a></li>
+              <li><a class="link" href="#our_school">Our school</a></li>
+              <li><a class="link" href="#our_coaches">Our coaches</a></li>
+              <li><a class="link" href="#disciplines">Disciplines</a></li>
+              <li><a class="link" href="#contact_us">Contact us</a></li>
             </ul>
           </nav>
           <address class="footer__address address">
@@ -423,36 +443,36 @@
         </p>
         <form a name="modal-form" autocomplete="off">
           <div class="modal__form-field input">
-            <label class="input__label" for="user-name">Name</label>
             <input
               class="input__control"
               type="text"
               id="user-name"
               name="user-name"
+              placeholder="Name"
               required
             />
           </div>
           <div class="modal__form-field input">
-            <label class="input__label" for="user-tel">Phone Number</label>
             <input
               class="input__control"
               type="tel"
               id="user-tel"
               name="user-tel"
+              placeholder="Phone Number"
               required
             />
           </div>
           <div class="modal__form-field input">
-            <label class="input__label" for="user-email">Email</label>
             <input
               class="input__control"
               type="email"
               id="user-email"
               name="user-email"
+              placeholder="Email"
               required
             />
           </div>
-          <!-- <div class="checkbox">
+          <div class="checkbox">
             <input
               class="checkbox-input"
               type="checkbox"
@@ -465,7 +485,7 @@
                 <a class="#" href="#">privacy policy</a>
               </p>
             </label>
-          </div> -->
+          </div>
           <button class="button modal__button" type="submit">
             Order a call back
           </button>

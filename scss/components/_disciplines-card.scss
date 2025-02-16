@@ -1,4 +1,9 @@
 .disciplines-card {
+  background-image: linear-gradient(
+    rgb(106 123 148 / 50%) 48.529%,
+    rgb(95, 99, 104) 84.641%,
+    rgb(60, 64, 67) 101.43%
+  );
   position: relative;
   border-radius: 16px;
   padding: 24px;
@@ -9,7 +14,7 @@
   box-shadow: 2px 2px 3px 4px var(--color-brand);
   transition: transform 0.5s;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: flex-end;
 
   &__title {
